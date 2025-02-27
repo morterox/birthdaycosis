@@ -226,6 +226,15 @@ const questions = [
         ]
     },
     {
+        question: "¿Cual es la ultima compra de china que le llegó a Martín?",
+        answers: [
+            {text: 'Una banda elástica con parlantes para dormir', correct: 'i'},
+            {text: 'Mas joysticks', correct: 't'},
+            {text: 'Un teclado', correct: 'f'},
+            {text: 'Otra consola china', correct: 'g'}
+        ]
+    },
+    {
         question: "¿Cual de estas actividades no realizó nunca Martín?",
         answers: [
             {text: 'Tela', correct: 'm'},
