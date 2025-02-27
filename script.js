@@ -91,10 +91,10 @@ function selectAnswer(e) {
         codeElement.innerText = 'TÚ CÓDIGO ES: ' + totalcode
         codeElement.classList.remove('hide')
         // NO more additions to the form with this line commented:
-        // linkForm.classList.remove('hide')
+        linkForm.classList.remove('hide')
 
-        // console.log(formName.value)
-        // console.log(total)
+        console.log(formName.value)
+        console.log(total)
         // startButton.innerText = 'Restart'
         // startButton.classList.remove('hide')
     }
@@ -111,194 +111,127 @@ function behaviorForOption(correct) {
 
 const questions = [
     {
-        question: "¿Cuál es la película favorita de la pareja?",
+        question: "¿Cuál fue la última serie Coreana que vieron Eileen y Martín?",
         answers: [
-            {text: 'Diario de una Pasión', correct: 'w'},
-            {text: 'About Time', correct: 'i'},
-            {text: 'Loco por Mary', correct: 'q'},
-            {text: 'La La Land', correct: 'n'}
+            {text: 'Alquimia de almas', correct: 'i'},
+            {text: 'Aterrizaje de emergencia en tu corazón', correct: 'w'},
+            {text: 'Tu tiempo llama', correct: 'q'},
+            {text: 'Propuesta Laboral', correct: 'n'}
         ]
     },
     {
-        question: '¿Cuantos años hace que se conocen los novios?',
+        question: '¿Por qué es importante el 27 de febrero?',
         answers: [
-            {text: '2', correct: 'f'},
-            {text: '4', correct: 'a'},
-            {text: '6', correct: 'g'},
-            {text: '7', correct: 'y'}
+            {text: 'Es el cumpleaños de Martín', correct: 'a'},
+            {text: 'Es el Pókemon day', correct: 'e'},
+            {text: 'Manuel Belgrano iza la bandera Argentina por primera vez', correct: 'i'},
+            {text: 'Todas son correctas', correct: 'o'}
         ]
     },
     {
-        question: '¿Dónde se conoció la pareja por primera vez?',
+        question: '¿Cuál es el último juego que jugó Martín?',
         answers: [
-            {text: 'Una fiesta', correct: 'b'},
-            {text: 'Ok Cupid', correct: 'a'},
-            {text: 'Disney', correct: 'c'},
-            {text: 'Shabat', correct: 'p'}
+            {text: 'Spider-Man Shattered Dimensions', correct: 'a'},
+            {text: 'Spider-Man 2 PS5', correct: 'b'},
+            {text: 'The Legend of Zelda - Tears of the Kingdom', correct: 'c'},
+            {text: 'Pokemon Legends: Arceus', correct: 'p'}
         ]
     },
     {
-        question: "¿Cómo se llama su Perrita?",
+        question: "¿Cuantos joysticks de Nintendo Switch tiene Martín? (contando cada joycon como 1)",
         answers: [
-            {text: 'Cthulu', correct: 't'},
-            {text: 'Maia', correct: 'a'},
-            {text: 'Nami', correct: 'r'},
-            {text: 'Bicho', correct: 'f'}
+            {text: '15', correct: 't'},
+            {text: '20', correct: 'a'},
+            {text: '10', correct: 'r'},
+            {text: '25', correct: 'f'}
         ]
     },
     {
-        question: "¿Quién se queda despierto hasta mas tarde?",
+        question: "Martín es:",
         answers: [
-            {text: 'Martin', correct: 'g'},
-            {text: 'Eileen', correct: 'u'}
+            {text: 'Ordenado', correct: 'g'},
+            {text: 'Desordenado', correct: 'u'},
+            {text: 'Spider-Man', correct: 'f'}
         ]
     },
     {
-        question: "¿Cuál es la banda favorita de Martín?",
+        question: "Martín es:",
         answers: [
-            {text: 'Nickelback', correct: 'e'},
-            {text: 'Fall Out Boy', correct: 'y'},
-            {text: 'Attaque 77', correct: 't'},
-            {text: 'Los Piojos', correct: 'w'}
+            {text: 'Impuntual', correct: 'e'},
+            {text: 'Puntual', correct: 'y'},
+            {text: 'Un agente secreto de los servicios de inteligencia', correct: 'g'}
         ]
     },
     {
-        question: "¿Cuál es el apodo de la pareja?",
+        question: "¿Cuantas consolas de videojuegos chinas tiene actualmente Martín?",
         answers: [
-            {text: 'Cosis', correct: 'a'},
-            {text: 'Bubus', correct: 'y'},
-            {text: 'Babies', correct: 'g'},
-            {text: 'Yugus', correct: 'n'}
+            {text: '5', correct: 'e'},
+            {text: '3', correct: 'y'},
+            {text: '2', correct: 'g'},
+            {text: '1', correct: 'n'}
         ]
     },
     {
-        question: "¿Cómo se llaman los padres de Eileen?",
+        question: "¿Cual de estos gustos de helado no soporta Martín?",
         answers: [
-            {text: 'Leda / Julio', correct: 'a'},
-            {text: 'Raquel / Isaac', correct: 'b'},
-            {text: 'Mirta / Roberto', correct: 't'},
-            {text: 'Sandra / Marcelo', correct: 'k'}
+            {text: 'Kinotos al Whisky', correct: 'b'},
+            {text: 'Sambayon', correct: 'a'},
+            {text: 'Menta granizada', correct: 't'},
+            {text: 'Mascarpone', correct: 'k'}
         ]
     },
     {
-        question: "¿Cómo se llaman los padres de Martín?",
+        question: "¿Cuando fue la ultima vez que Martín rayó su auto?",
         answers: [
-            {text: 'Graciela / Ricardo', correct: 'f'},
-            {text: 'Liliana / Ernesto', correct: 'u'},
-            {text: 'Adriana / Victor', correct: 't'},
-            {text: 'Silvia / Alberto', correct: 'm'}
+            {text: 'Hace 1 año', correct: 'f'},
+            {text: 'Ayer', correct: 'u'},
+            {text: 'A la semana de tenerlo', correct: 't'},
+            {text: 'Hace 2 años', correct: 'm'}
         ]
     },
     {
-        question: "¿Cuál es el juego de mesa favorito de la pareja?",
+        question: "¿Qué le duele actualmente mas a Martín?",
         answers: [
-            {text: 'Yinsh', correct: 'i'},
-            {text: 'Dixit', correct: 't'},
-            {text: 'T.E.G', correct: 'r'},
-            {text: 'Coup', correct: 'j'}
+            {text: 'Un Hombro', correct: 'i'},
+            {text: 'El Corazón', correct: 't'},
+            {text: 'La Edad', correct: 'r'},
+            {text: 'La Espalda', correct: 'j'}
         ]
     },
     {
-        question: "¿Quién es el mejor conductor?",
+        question: "¿Cuantos televisores llegó a tener Martín en un monoambiente de 40 metros cuadrados?",
         answers: [
-            {text: 'Martin', correct: 'c'},
-            {text: 'Eileen', correct: 'o'}
+            {text: '3', correct: 'o'},
+            {text: '2', correct: 'w'},
+            {text: '1', correct: 'x'},
+            {text: '4', correct: 'y'}
         ]
     },
     {
-        question: "¿Qué hace Eileen en todos los lugares nuevos que visita?",
+        question: "¿Cual es el amigo mas antiguo de Martín?",
         answers: [
-            {text: 'El puente', correct: 'i'},
-            {text: 'Shopping', correct: 't'},
-            {text: 'Duerme', correct: 'r'},
-            {text: 'Busca Ardillas', correct: 'n'}
+            {text: 'Uriel', correct: 'i'},
+            {text: 'Emilio', correct: 't'},
+            {text: 'Emmanuel', correct: 'r'},
+            {text: 'Spider-Man', correct: 'n'}
         ]
     },
     {
-        question: "¿Quién tiene mejor sentido de orientación?",
+        question: "Entre estos Pokemones, ¿Cual prefiere Martín?",
         answers: [
-            {text: 'Eileen', correct: 'i'},
-            {text: 'Martín', correct: 't'}
+            {text: 'Growlithe', correct: 'i'},
+            {text: 'Garchomp', correct: 't'},
+            {text: 'Kadabra', correct: 'f'},
+            {text: 'Sudowoodo', correct: 'g'}
         ]
     },
     {
-        question: "¿Dónde se pusieron de novios?",
+        question: "¿Cual de estas actividades no realizó nunca Martín?",
         answers: [
-            {text: 'Cumpleños de Alexia 2019', correct: 'i'},
-            {text: 'Panamá 2020', correct: 't'},
-            {text: 'Cita en pandemia 2020', correct: 'y'},
-            {text: 'Camas saltarinas 2019', correct: 'w'}
-        ]
-    },
-    {
-        question: "¿Quién se roba las sábanas?",
-        answers: [
-            {text: 'Eileen', correct: 'p'},
-            {text: 'Martín', correct: 'u'},
-            {text: 'Maia', correct: 'w'}
-        ]
-    },
-    {
-        question: "¿A dónde fueron para su primera cita?",
-        answers: [
-            {text: 'Pani', correct: 'a'},
-            {text: 'Kentucky', correct: 'c'},
-            {text: 'Starbucks', correct: 'v'},
-            {text: 'Kansas', correct: 'p'}
-        ]
-    },
-    {
-        question: "¿Cuál es el superhéroe favorito de Martín?",
-        answers: [
-            {text: 'Spider-Man', correct: 'e'},
-            {text: 'Iron Man', correct: 'r'},
-            {text: 'Batman', correct: 'j'},
-            {text: 'Superman', correct: 'k'}
-        ]
-    },
-    {
-        question: "¿Qué gusto de helado no puede soportar Martín?",
-        answers: [
-            {text: 'Sambayón', correct: 'o'},
-            {text: 'Dulce de Leche', correct: 'd'},
-            {text: 'Menta Granizada', correct: 's'},
-            {text: 'Kinotos al Whisky', correct: 'r'}
-        ]
-    },
-    {
-        question: "¿Qué idiomas habla fluído Eileen?",
-        answers: [
-            {text: 'Inglés, Español, Francés, Portugués', correct: 'a'},
-            {text: 'Inglés, Español, Italiano, Francés', correct: 'd'},
-            {text: 'Inglés, Español, Italiano, Portugués', correct: 'y'},
-            {text: 'Inglés, Español, Francés, Hebreo', correct: 'k'}
-        ]
-    },
-    {
-        question: "¿Qué talla de zapato tiene Martín?",
-        answers: [
-            {text: '46/47', correct: 'o'},
-            {text: '42/43', correct: 'h'},
-            {text: '44/45', correct: 'y'},
-            {text: '48/49', correct: 'p'}
-        ]
-    },
-    {
-        question: "¿Qué pide Eileen en Starbucks?",
-        answers: [
-            {text: 'Chai Latte', correct: 'i'},
-            {text: 'Frapuccino', correct: 'f'},
-            {text: 'Té de Hibiscus', correct: 'g'},
-            {text: 'Café del día', correct: 'b'}
-        ]
-    },
-    {
-        question: "¿Cuál de estas sagas prefiere Eileen?",
-        answers: [
-            {text: 'Artemis Foul', correct: 'm'},
-            {text: 'Harry Potter', correct: 'u'},
-            {text: 'Lord of the Rings', correct: 'p'},
-            {text: 'The Hunger Games', correct: 'l'}
+            {text: 'Tela', correct: 'm'},
+            {text: 'Rugby', correct: 'u'},
+            {text: 'Radio', correct: 'p'},
+            {text: 'Ping Pong', correct: 'l'}
         ]
     }
 ]
